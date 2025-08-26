@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head-to-Head Ranking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Head-to-Head Ranking</h1>
+        
+        <div id="setup-section">
+            <p>Enter items to rank (A through Z are pre-filled):</p>
+            <textarea id="items-input" rows="10" cols="30">A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z</textarea>
+            <button id="start-btn">Start Ranking</button>
+        </div>
+        
+        <div id="comparison-section" class="hidden">
+            <h2>Which do you prefer?</h2>
+            <div class="comparison-container">
+                <button id="left-option" class="option-btn"></button>
+                <div class="vs">VS</div>
+                <button id="right-option" class="option-btn"></button>
+            </div>
+            <div class="progress">
+                <span id="progress-text">Comparison 1 of X</span>
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="results-section" class="hidden">
+            <h2>Final Rankings</h2>
+            <ol id="rankings-list"></ol>
+            <button id="restart-btn">Start Over</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
